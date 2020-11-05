@@ -1,3 +1,37 @@
-.header {
-	background-color: pink;
+header {
+	background-color: $bgc;
+	font-family: "Gotham";
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		.nav-brand {
+			width: 180px;
+			img {
+				width: 100%;
+			}
+		}
+		
+		.nav-links {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			.nav-item {
+				padding: 5px 10px;
+				.nav-link {
+					color:$white;
+					font-size: 16px;
+					line-height: 55px;
+					text-transform: uppercase;
+					text-decoration: none;
+
+					&.active {
+						color:$yellow;
+					}
+				}
+			}
+		}
+	}
+	
 }
